@@ -7,7 +7,7 @@ const Order = () => {
   const userDetails = useSelector((state) => state?.userDetails);
 
   return (
-    <div className="w-[80vw] mx-auto mb-44">
+    <div className="w-[80vw] mx-auto mb-80">
       {userDetails?.isAuthenticated &&
       userDetails?.user[0]?.orderedProducts?.length > 0 ? (
         userDetails.user[0].orderedProducts.map((item) => (
